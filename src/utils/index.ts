@@ -5,7 +5,7 @@ export const setTheme = (light: boolean = false) => {
     '--bg-color': '#191b2d',
     '--bg-color-accent': '#35395f',
     '--bg-color-accent-2': '#20233a',
-    '--bg-color-secondary': '#4a5085',
+    '--bg-color-secondary': '#292b2c',
 
     '--color-primary': 'rgba(255, 255, 255, 1)',
     '--color-secondary': 'rgba(255, 255, 255, 0.78)',
