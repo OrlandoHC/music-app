@@ -294,14 +294,14 @@ function App() {
             hidden
             multiple
             type="url"
-            ref={input}
+            ref="https://stream.streamaudio.de:8000/noize-nacion-radio"
             accept="audio/*"
             onChange={e => dispatch(ADD_SONGS(e.target.files))}
           />
           <audio
             hidden
             controls
-            ref="https://stream.streamaudio.de:8000/noize-nacion-radio"
+            ref={audio}
             onEnded={() => handleSongEnd()}
             onTimeUpdate={() => updateTime()}
           ></audio>
