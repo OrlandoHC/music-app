@@ -14,7 +14,7 @@ const Home = ({ onSearch, showSearch, playlist }: HomeProps) => {
         <div className="home__input">
           <Input
             type="search"
-            placeholder="Search"
+            placeholder="Buscar"
             onChange={(e: string) => onSearch && onSearch(e)}
           />
         </div>
