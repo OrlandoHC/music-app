@@ -247,11 +247,11 @@ function App() {
             playlist={
               filteredSongs().length === 0 ? (
                 <Empty
-                  message="No songs found"
+                  message="LISTA DE REPRODUCCION VACIA"
                   description={
                     searchText && songs.length > 0
-                      ? 'To widen your search, change or remove keyword'
-                      : 'When you are ready, go ahead and add few songs'
+                      ? 'Para ampliar la búsqueda, cambie o elimine la palabra clave'
+                      : 'Cuando esté listo, presione + para agregar canciones.'
                   }
                 />
               ) : (
@@ -295,7 +295,7 @@ function App() {
             multiple
             type="file"
             ref={input}
-            accept="audio/mp3,audio/wav,audio/ogg"
+            accept="audio/mp3,audio/wav,audio/ogg,audio/*"
             onChange={e => dispatch(ADD_SONGS(e.target.files))}
           />
           <audio
