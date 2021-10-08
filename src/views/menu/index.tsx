@@ -20,19 +20,19 @@ const Menu = ({ show, onClose }: MenuProps) => {
     {
       id: 1,
       key: 'grid',
-      name: 'Grid style song list',
+      name: 'Vista estilo cuadrícula',
       onClick: () => dispatch(SET_GRID(!settings.grid)),
     },
     {
       id: 2,
       key: 'visualizer',
-      name: 'Show visualizer',
+      name: 'Mostrar Visualizador',
       onClick: () => dispatch(SET_VISUALIZER(!settings.visualizer)),
     },
     {
       id: 3,
       key: 'light',
-      name: 'Light theme',
+      name: 'Tema Claro',
       onClick: () => dispatch(SET_THEME(!settings.light)),
     },
   ];
@@ -40,7 +40,7 @@ const Menu = ({ show, onClose }: MenuProps) => {
   return (
     <div className={`menu ${show ? 'menu--show' : ''}`.trim()}>
       <Header
-        title={'Settings'}
+        title={'Ajustes'}
         leftIcon={null}
         rightIcon={
           <div style={{ transform: 'rotate(45deg) translateY(2px)' }}>
