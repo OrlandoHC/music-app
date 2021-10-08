@@ -1,6 +1,6 @@
 {
-  "short_name": "Music Player",
-  "name": "Music Player PWA",
+  "short_name": "Noize Player",
+  "name": "Noize Nación Player",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#292b2c",
-  "background_color": "#ffffff"
+  "background_color": "#000000"
 }

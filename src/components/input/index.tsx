@@ -11,7 +11,7 @@ type InputProps = {
 const Input = ({
   onChange,
   type = 'text',
-  placeholder = 'Search...',
+  placeholder = 'Buscar',
 }: InputProps) => {
   const [inFocus, setFocus] = useState(false);
   return (
