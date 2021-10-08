@@ -295,7 +295,7 @@ function App() {
             multiple
             type="file"
             ref={input}
-            accept="audio/mp3,audio/wav,audio/ogg,audio/*"
+            accept="audio/*"
             onChange={e => dispatch(ADD_SONGS(e.target.files))}
           />
           <audio
