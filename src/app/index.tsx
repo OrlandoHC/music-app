@@ -293,7 +293,7 @@ function App() {
           <input
             hidden
             multiple
-            type="url"
+            type="file"
             ref={input}
             accept="audio/*"
             onChange={e => dispatch(ADD_SONGS(e.target.files))}
@@ -301,7 +301,6 @@ function App() {
           <audio
             hidden
             controls
-            src="https://stream.streamaudio.de:8000/noize-nacion-radio"
             ref={audio}
             onEnded={() => handleSongEnd()}
             onTimeUpdate={() => updateTime()}
